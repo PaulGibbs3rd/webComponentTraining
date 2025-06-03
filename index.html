@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Car & Map Tools App</title>
+
+    <!-- 1) Esri CSS (popups and widgets) -->
+<link rel="stylesheet" href="https://js.arcgis.com/4.32/esri/themes/light/main.css" />
+<script src="https://js.arcgis.com/4.32/"></script>
+
+    <!--  
+      • Loads the core 4.x modules under window.require([...]). 
+        We’ll still import ESM for GeoJSONLayer, but Map Components 
+        rely on 4.x being present. 
+    -->
+
+    <!-- 3) ArcGIS Map Components runtime -->
+    <script
+      type="module"
+      src="https://js.arcgis.com/map-components/4.32/arcgis-map-components.esm.js"
+    ></script>
+    <!--  
+      • Registers the <arcgis-map> and related tags. If you omit this, 
+        <arcgis-map> never “upgrades” and will remain inert. 
+    -->
+          <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <color-home></color-home>
+      <car-home></car-home>
+      <map-home></map-home>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

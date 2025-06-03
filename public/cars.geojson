@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "make": "Toyota",
+        "model": "Highlander",
+        "year": 2003,
+        "color": "red",
+        "price": 400
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ -118.805, 34.027 ]    
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "make": "Fiat",
+        "model": "500e",
+        "year": 2015,
+        "color": "grey",
+        "price": 6000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ -118.810, 34.022 ]
+      }
+    }
+  ]
+}

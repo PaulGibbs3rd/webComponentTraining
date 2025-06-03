@@ -1,0 +1,21 @@
+{
+  "name": "tools-app-wc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/arcgis-js-api": "^4.27.2",
+    "@types/geojson": "^7946.0.16",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@arcgis/core": "^4.32.10",
+    "@arcgis/map-components": "^4.32.14"
+  }
+}
