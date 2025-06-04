@@ -8,27 +8,29 @@
     />
     <title>Car & Map Tools App</title>
 
-    <!-- 1) Esri CSS (popups and widgets) -->
-<link rel="stylesheet" href="https://js.arcgis.com/4.32/esri/themes/light/main.css" />
-<script src="https://js.arcgis.com/4.32/"></script>
+    <!-- 1) Esri CSS (popups & widgets) from CDN -->
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.32/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.32/"></script>
 
-    <!--  
-      • Loads the core 4.x modules under window.require([...]). 
-        We’ll still import ESM for GeoJSONLayer, but Map Components 
-        rely on 4.x being present. 
-    -->
-
-    <!-- 3) ArcGIS Map Components runtime -->
+    <!-- 2) ArcGIS Map Components runtime from CDN -->
     <script
       type="module"
       src="https://js.arcgis.com/map-components/4.32/arcgis-map-components.esm.js"
     ></script>
-    <!--  
-      • Registers the <arcgis-map> and related tags. If you omit this, 
-        <arcgis-map> never “upgrades” and will remain inert. 
-    -->
-          <link rel="stylesheet" href="/webComponentTraining/style.css" />
-    <script type="module" crossorigin src="/webComponentTraining/assets/index-DoWzciUD.js"></script>
+
+    <!-- 3) Your own built CSS (must be “style.css” in docs/, no leading slash!) -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 4) Your own built JS bundle inside docs/assets/ (no leading slash!) -->
+    <!--    Replace index-DoWzciUD.js with whatever hashed file you see under docs/assets/ -->
+    <script
+      type="module"
+      crossorigin
+      src="assets/index-DoWzciUD.js"
+    ></script>
   </head>
   <body>
     <div id="app">
