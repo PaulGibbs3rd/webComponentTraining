@@ -260,7 +260,7 @@ var V=Object.defineProperty;var P=s=>{throw TypeError(s)};var Y=(s,a,t)=>a in s?
 
       <!-- 1) ToolHeader with an <img> projected into slot="logo" -->
       <tool-header header-text="Car Tool">
-        <img slot="logo" src="/car-logo.png" alt="Car Logo" />
+        <img slot="logo" src="/../car-logo.png" alt="Car Logo" />
       </tool-header>
 
       <!-- 2) Show a status line if we are waiting for the map click -->
