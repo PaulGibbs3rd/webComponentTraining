@@ -1,0 +1,36 @@
+/* style.css */
+
+/* 1) Turn #app into a 2×2 grid */
+#app {
+  display: grid;
+  /* two columns of equal width */
+  grid-template-columns: 1fr 1fr;
+  /* two rows: “auto” will size to content height */
+  grid-template-rows: auto auto;
+  gap: 1rem; /* optional spacing between cells */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* 2) Place <color-home> in the left column, top row */
+color-home {
+  grid-column: 1;   /* first column */
+  grid-row:    1;   /* first row */
+}
+
+/* 3) Place <car-home> in the left column, second row */
+car-home {
+  grid-column: 1;   /* first column */
+  grid-row:    2;   /* second row */
+}
+
+/* 4) Place <map-home> in the right column, but make it span both rows */
+map-home {
+  grid-column: 2;         /* second column */
+  grid-row:    1 / span 2;/* start at row 1, span 2 rows */
+  /* You can fix its width/height as needed, but by default it will stretch */
+  width: 100%;
+  /* If you want a fixed height (e.g. 400px), uncomment the next line: */
+  /* height: 400px; */
+  box-sizing: border-box;
+}
